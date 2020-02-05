@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(250, 190, 78);
+    margin: 0
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.key{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 7px;
+    margin-top: 700px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.274);
+}
+
+.key:focus{
+    border: none;
+    outline: none;
+}
+
+.letter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bongoHandUps{
+    height: 100px;
+    width: 100px;
+}
