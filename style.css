@@ -6,18 +6,82 @@ body{
 .container{
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
+
+@media only screen and (max-width: 691px){
+    .container{
+        display: flex;
+        text-align: center;
+    }
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    font-size: 90px;
+    margin-top: 0px;
+    font-family: 'Sigmar One', cursive;
+}
+
+@media only screen and (max-width: 691px){
+    #header{
+        font-size: 70px;
+        margin-top: -20px;
+    }
+}
+
+.inner-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+#bongoHandsUp{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    height: 300px;
+    width: 300px;
+}
+
+@media only screen and (max-width: 691px){
+    #bongoHandsUp{
+        margin-top: -40px;
+    }
+}
+
+.inner-container2{
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 691px){
+    .inner-container2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 
 .key{
     display: flex;
-    height: 50px;
-    width: 50px;
+    flex-wrap: wrap;
+    height: 70px;
+    width: 90px;
     border-radius: 7px;
-    margin-top: 700px;
+    margin-top: 90px;
     margin-left: 20px;
     margin-right: 20px;
     justify-content: center;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.274);
+    box-shadow: 0 9px rgba(197, 197, 197, 0.884), 4px 4px 4px 4px rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+}
+
+
+
+.key:hover{
+    background-color: rgb(231, 229, 229);
 }
 
 .key:focus{
@@ -25,13 +89,61 @@ body{
     outline: none;
 }
 
+.key:active{
+    transform: translateY(4px);
+    box-shadow: 0 5px rgb(160, 160, 160), 2px 2px 2px 2px rgba(0, 0, 0, 0.425);
+}
+
+@media only screen and (max-width: 691px){
+    .key{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 60px;
+        margin-top: 60px;
+    }
+
+    .key:hover{
+        background-color: rgb(231, 229, 229);
+    }
+
+    .key:active{
+        transform: translateY(4px);
+        box-shadow: 0 5px rgb(160, 160, 160), 2px 2px 2px 2px rgba(0, 0, 0, 0.425);
+    }
+}
+
 .letter{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    font-family: 'Sigmar One', cursive;
+    font-size: 20px;
 }
 
-.bongoHandUps{
-    height: 100px;
-    width: 100px;
+@media only screen and (max-width: 691px){
+    .letter{
+        font-size: 15px;
+    }
+}
+
+.sound{
+    display: flex;
+    width: 90px;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    font-family: 'Sigmar One', cursive;
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 691px){
+    .sound{
+        font-size: 15px;
+        margin-top: -20px;
+    }
 }
