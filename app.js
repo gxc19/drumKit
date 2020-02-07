@@ -144,6 +144,7 @@ button7.addEventListener("click", () => {
 
 
 button8.addEventListener("click", () => {
+        bongoHandsUp.src="bongoCat/tink.png"
         tink.pause()
         tink.currentTime = 0
         tink.play()
