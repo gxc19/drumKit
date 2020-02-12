@@ -13,6 +13,7 @@ body{
     .container{
         display: flex;
         text-align: center;
+        align-items: center;
     }
 }
 
@@ -48,6 +49,8 @@ body{
 @media only screen and (max-width: 691px){
     #bongoHandsUp{
         margin-top: -40px;
+        height: auto;
+        width: 250px;
     }
 }
 
@@ -60,9 +63,10 @@ body{
     .inner-container2{
         display: flex;
         flex-wrap: wrap;
+        width: 300px;
+        margin-top: -70px;
     }
 }
-
 
 .key{
     display: flex;
@@ -126,6 +130,7 @@ body{
 @media only screen and (max-width: 691px){
     .letter{
         font-size: 15px;
+        margin-top: -1px;
     }
 }
 
@@ -144,6 +149,6 @@ body{
 @media only screen and (max-width: 691px){
     .sound{
         font-size: 15px;
-        margin-top: -20px;
+        margin-top: 1px;
     }
 }
